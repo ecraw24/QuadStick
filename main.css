@@ -1,0 +1,15 @@
+#controller-image, #quadstick-image {
+    max-width: 300px;
+    height: auto;
+}
+.tab-content {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.tab {
+    cursor: pointer;
+}
