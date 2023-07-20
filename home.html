@@ -2,58 +2,72 @@
 <html>
 <head>
     <title>Controller Configuration</title>
-</head>
-<body>
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Controller Configuration</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <div id="tabs">
         <div class="tab" data-target="profile1">Profile 1</div>
         <div class="tab" data-target="profile2">Profile 2</div>
         <div class="tab" data-target="profile3">Profile 3</div>
+        <div class="tab" data-target="profile4">Profile 4</div>
+        <div class="tab" data-target="profile5">Profile 5</div>
         <!-- Repeat for remaining profiles -->
     </div>
 
-    <div id="profile1" class="tab-content active">
+    <div id="profile1" class="tab-content">
+        <h2>Profile 1</h2>
         <!-- Content for Profile 1 -->
-        <select id="controller-select">
-            <option value="">Select a controller</option>
-            <option value="controller1">Controller 1</option>
-            <option value="controller2">Controller 2</option>
-            <option value="controller3">Controller 3</option>
-        </select>
-        <select class="shape-select">
-            <option value="">Select a shape</option>
-            <option value="circle">Circle</option>
-            <option value="square">Square</option>
-            <option value="triangle">Triangle</option>
-            <option value="x">X</option>
-        </select>
-    
-        <img id="controller-image" src="" alt="controller image">
-        <img id="quadstick-image" src="quadstick.png" alt="quadstick image">
+
+        <div class="img-container">
+            <div class = "controller-container">
+                <div class="dd-section-left">
+                </div>
+                <div class='img-section'>
+                    <label>Controller Type: </label>
+                    <select id="controller-select">
+                    </select>
+                    <img id="quadstick-image" src="quadstick.jpg" alt="quadstick image">
+                    <img id="controller-image" src="ps3.png" alt="controller image">
+                </div>
+                <div class="dd-section-right">
+                </div>
+            </div>
+            <div class="controller-container" style="display:none">            
+                <div class="quad-container">
+                    <img id="quadstick-image" src="quadstick.jpg" alt="quadstick image">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div id="profile2" class="tab-content">
+        <h2>Profile 2</h2>
+        
         <!-- Content for Profile 2 -->
     </div>
 
     <div id="profile3" class="tab-content">
         <!-- Content for Profile 3 -->
+        <h2>Profile 3</h2>
+
+    </div>
+
+    <div id="profile4" class="tab-content">
+        <!-- Content for Profile 3 -->
+        <h2>Profile 4</h2>
+
+    </div>
+
+    <div id="profile5" class="tab-content">
+        <!-- Content for Profile 3 -->
+        <h2>Profile 5</h2>
+
     </div>
 
     <!-- Repeat for remaining profiles -->
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
-
 </body>
 </html>

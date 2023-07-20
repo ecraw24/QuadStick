@@ -1,15 +1,87 @@
-#controller-image, #quadstick-image {
-    max-width: 300px;
-    height: auto;
+
+#tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
 }
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 2px;
+    list-style-type: none;
+}
+
+.tab:hover {
+    background-color: #bbb;
+}
+
 .tab-content {
     display: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .active {
     display: block;
+    background-color: #fff;
 }
 
-.tab {
-    cursor: pointer;
+.active.tab {
+    background-color: #bbb;
 }
+
+.controller-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+
+}
+
+.img-container {
+    display: flex;
+}
+
+.dd-section, .img-section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+.dd-section-left, .dd-section-right {
+    flex: 1 1 25%;
+}
+
+.img-section {
+    flex: 1 1 50%;
+}
+
+#quadstick-image, #contoller-image {
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-bottom: 20px; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dd-section-left select, .dd-section-right select {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dd-section-left label, .dd-section-right label {
+    font-size: 11px; 
+  }
